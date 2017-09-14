@@ -4,12 +4,6 @@ Project 1 for COMP2012H, 2016 Fall, HKUST
 A prototypical stock trading system
 
 
-## Author
-Name: DING, MuCong
-Student ID: 20323458
-ITSC: mcding
-
-
 ## How-to-compile-and-run
 ```
 $ make
