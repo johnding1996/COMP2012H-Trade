@@ -1,25 +1,25 @@
-Trade
+# Trade
 ===============
 Project 1 for COMP2012H, 2016 Fall, HKUST
 
 A prototypical stock trading system
 
 
-Author
+## Author
 ===============
 Name: DING, MuCong
 Student ID: 20323458
 ITSC: mcding
 
 
-How-to-compile-and-run
+## How-to-compile-and-run
 ===============
 >make
 >server_main
 >client_main hostname 5001
 
 
-Technical Details
+## Technical Details
 ===============
 This program is a single-server-multiple-clients system where messages are passed between the server and multiple client.
 
