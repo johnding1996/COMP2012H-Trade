@@ -1,26 +1,24 @@
 # Trade
----------------
 Project 1 for COMP2012H, 2016 Fall, HKUST
 
 A prototypical stock trading system
 
 
 ## Author
----------------
 Name: DING, MuCong
 Student ID: 20323458
 ITSC: mcding
 
 
 ## How-to-compile-and-run
----------------
->make
->server_main
->client_main hostname 5001
+```
+$ make
+$ server_main
+$ client_main hostname 5001
+```
 
 
 ## Technical Details
----------------
 This program is a single-server-multiple-clients system where messages are passed between the server and multiple client.
 
 The server main program has an outer while-1 loop which continuously accepts new connection from multiple clients. Inside there are two inner while-1 loops running concurrently using fork(), one while-1 loop generates and writes updated stock price to all connected clients every second with the time the price was generated (all times in the sample executables are obtained via the system call time()), while the other while-1 loop simultaneously waits and processes buy requests when they are received.
